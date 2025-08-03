@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:24.10
 
 # Add the Non-privileged user
 RUN useradd -s /bin/bash -m sans && apt update && apt install -y sudo git && echo "sans ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
